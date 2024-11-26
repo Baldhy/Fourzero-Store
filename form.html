@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu Navigasi Hamburger</title>
+        <link rel="stylesheet" href="form.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-menu" id="garisTiga">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="header-logo">
+                    <img
+                        src="rsc/diamond.png"
+                        id="logo-diamond"
+                        alt="diamond"
+                    />
+                    <h2>Fourzero Store</h2>
+                </div>
+
+                <ul class="nav-list">
+                    <a href="index.html">
+                        <li class="list-menu" id="homeNav">Beranda</li>
+                    </a>
+                    <a href="form.html">
+                        <li class="list-menu" id="topupNav">Top-Up</li>
+                    </a>
+                    <a href="about.html">
+                        <li class="list-menu" id="contactNav">Tentang</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- <h2>Hot Promo 🔥</h2> -->
+            <div class="form-container">
+                <h2 id="top-form">Top-Up Form</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">ID Akun</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="server">Server Akun</label>
+                        <input type="text" id="server" name="server" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="nominal">Nominal</label>
+                        <select>
+                            <option>45 Diamonds (Rp. 11.539)</option>
+                            <option>128 Diamonds (Rp. 32.961)</option>
+                            <option>518 Diamonds (Rp. 41.356)</option>
+                            <option>1136 Diamonds (Rp. 300.420)</option>
+                            <option>3146 Diamonds (Rp. 802.625)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nominal">Metode Pembayaran</label>
+                        <select>
+                            <option>Dana</option>
+                            <option>Gopay</option>
+                            <option>Indomaret</option>
+                            <option>Alfamart</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">Whatsapp</label>
+                        <input type="tel" id="server" name="server" required />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Kirim</button>
+                    </div>
+                </form>
+            </div>
+            <br />
+            <em><marquee behavior="scroll" direction="left" scrollAmount="10">Admin akan menghubungi nomor Whatsapp yang dimasukan di atas untuk mengonfirmasi metode pembayaran yang dipilih.</marquee></em>
+        </main>
+
+        <script src="script.js"></script>
+        <footer class="footer">
+            <p>&copy; 2024 Fourzero Store. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(146, 163, 162, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(30, 41, 82);
+}
+
+.header-logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-diamond {
+    width: 40px;
+    margin: 0 10px;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    width: 100%;
+}
+
+#top-form {
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: none; /* Sembunyikan menu text di perangkat mobile */
+    flex-direction: column; /*Tumpuk item secara vertikal */
+}
+
+.nav-list.active {
+    display: flex; /* Tampilkan menu ketika aktif */
+}
+
+.nav-list li {
+    width: 6rem;
+    padding: 10px 1rem;
+    text-align: center;
+}
+
+.list-menu:hover {
+    background-color: rgb(89, 89, 182);
+    border-radius: 10px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+}
+
+.form-container {
+    padding: 2.5rem 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(100, 95, 158, 0.996);
+    width: 100%;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-group button {
+    background-color: #12355b;
+    color: #fff;
+    border: none;
+    padding: 13.5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background-color: #688eb8;
+}
+
+.footer {
+    background-color: rgba(146, 163, 162, 0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+em {
+    color: rgb(255, 255, 255);
+    text-align: start;
+}
+
+/* Media query untuk tampilan desktop */
+@media (min-width: 768px) {
+    .nav-list {
+        display: flex; /* Tampilkan menu di desktop */
+        flex-direction: row; /* Item sejajar secara horizontal */
+    }
+
+    .nav-menu {
+        display: none; /* Sembunyikan garis tiga di desktop */
+    }
+}
